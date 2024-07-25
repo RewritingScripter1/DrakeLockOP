@@ -101,7 +101,7 @@ UICorner.Parent = Frame
 
 Logo.Name = "Logo"
 Logo.Parent = Frame
-Logo.BackgroundColor3 = Color3.fromRGB(100, 255, 100)
+Logo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Logo.BackgroundTransparency = 3.000
 Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Logo.BorderSizePixel = 0
@@ -113,7 +113,7 @@ Logo.ImageTransparency = 0.300
 TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BackgroundTransparency = 0.000
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderColor3 = Color3.fromRGB(128, 128, 128)
 TextButton.BorderSizePixel = 0
 TextButton.Position = UDim2.new(0.0792079195, 0, 0.18571429, 0)
 TextButton.Size = UDim2.new(0, 170, 0, 44)
@@ -130,12 +130,12 @@ local state = true
 TextButton.MouseButton1Click:Connect(function()
     state = not state
     if not state then
-        TextButton.Text = "Drake ON✅"
+        TextButton.Text = "Killua ON✅"
         CamlockState = true
         enemy = FindNearestEnemy()
         FOVCircle.Visible = true
     else
-        TextButton.Text = "Drake OFF❌"
+        TextButton.Text = "Killua OFF❌"
         CamlockState = false
         enemy = nil
         FOVCircle.Visible = false
